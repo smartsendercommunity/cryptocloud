@@ -1,9 +1,9 @@
 <?php
 
 // Config
-$ssToken = "q6lYgUcGt0SCXuqzKHb0DSkw8ZPhTMcQC4UUZxhC7W6q2lzTyZjaNX7VDTwB";
-$ccId = "xaJOzt6YZoYE4WOG";
-$ccToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjU4MywiZXhwIjo4ODA2NTQwOTEzMX0._ynvsWKcqxK25P9y2V1Nl__OPOwdx44P_qk6KAxRrSo";
+$ssToken = "";
+$ccId = "";
+$ccToken = "";
 
 // Functions
 function send_forward($inputJSON, $link){
