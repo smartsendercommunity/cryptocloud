@@ -17,7 +17,7 @@ $result["state"] = true;
 // Check Sign
 
 // Filter Data
-$orderData = explode("-", $input["order_id"]);
+$orderData = explode("--", $input["order_id"]);
 if ($input["status"] == "success") {
     $log["Smart Sender"]["success"]["send"]["name"] = $orderData[3];
     $log["Smart Sender"]["success"]["result"] = json_decode(send_bearer("https://api.smartsender.com/v1/contacts/".$orderData[2]."/fire", $ssToken, "POST", $log["Smart Sender"]["success"]["send"]), true);
