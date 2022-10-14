@@ -58,9 +58,9 @@ if ($input["amount"] == "checkout") {
 // Create invoice
 $invoice["shop_id"] = $ccId;
 $invoice["amount"] = $input["amount"];
-$invoice["order_id"] = time()."-".mt_rand(100000, 999999)."-".$input["userId"]."-".$input["action"];
+$invoice["order_id"] = time()."--".mt_rand(100000, 999999)."--".$input["userId"]."--".$input["action"];
 if ($input["failAction"] != NULL) {
-    $invoice["order_id"] = $invoice["order_id"]."-".$input["failAction"];
+    $invoice["order_id"] = $invoice["order_id"]."--".$input["failAction"];
 }
 if ($input["currency"] != NULL) {
     $invoice["currency"] = $input["currency"];
